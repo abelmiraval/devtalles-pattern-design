@@ -10,7 +10,6 @@ class Computer {
         RAM: ${this.ram}
         Almacenamiento: ${this.storage}
         GPU: ${this.gpu ?? 'No tiene GPU'}
-        
         `)
     }
 }

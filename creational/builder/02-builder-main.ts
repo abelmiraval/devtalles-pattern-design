@@ -1,27 +1,51 @@
 
-
-//! Tarea: crear un QueryBuilder para construir consultas SQL
+//! 🏗️ Desafío: Construcción de un QueryBuilder en JavaScript 🏗️
 
 /**
- * Debe de tener los siguientes métodos:
- * - constructor(table: string)
- * - select(fields: string[]): QueryBuilder -- si no se pasa ningún campo, se seleccionan todos con el (*)
- * - where(condition: string): QueryBuilder - opcional
- * - orderBy(field: string, order: string): QueryBuilder - opcional
- * - limit(limit: number): QueryBuilder - opcional
- * - execute(): string - retorna la consulta SQL
+ * 🎯 Objetivo: Implementar una clase `QueryBuilder` para generar dinámicamente consultas SQL de manera fluida utilizando métodos encadenados.
  *
- ** Ejemplo de uso:
- const usersQuery = new QueryBuilder("users") // users es el nombre de la tabla
- .select("id", "name", "email")
- .where("age > 18")
- .where("country = 'Cri'")
- .orderBy("name", "ASC")
- .limit(10)
- .execute();
-
- console.log('Consulta: ', usersQuery);
- // Select id, name, email from users where age > 18 and country = 'Cri' order by name ASC limit 10;
+ *
+ * 📝 Requisitos:
+ *   ✅ Construcción de consultas SQL con métodos encadenables
+ *   ✅ Soporte para selección de campos, condiciones, ordenamiento y límites
+ *   ✅ Generación de una consulta SQL válida como cadena de texto
+ *
+ * 🚀 Métodos que debe implementar la clase `QueryBuilder`:
+ *
+ * 🔹 `constructor(table: string)`
+ *     📌 Recibe el nombre de la tabla sobre la cual se ejecutará la consulta.
+ *
+ * 🔹 `select(...fields: string[]): QueryBuilder`
+ *     📌 Define los campos a seleccionar en la consulta.
+ *     📌 Si no se especifican, se selecciona todo (`*`).
+ *
+ * 🔹 `where(condition: string): QueryBuilder`
+ *     📌 Agrega condiciones de filtrado (`WHERE`).
+ *     📌 Puede encadenarse varias veces, combinando condiciones con `AND`.
+ *
+ * 🔹 `orderBy(field: string, order: string): QueryBuilder`
+ *     📌 Ordena los resultados por el campo especificado en `ASC` o `DESC`.
+ *
+ * 🔹 `limit(limit: number): QueryBuilder`
+ *     📌 Establece un límite de registros a devolver.
+ *
+ * 🔹 `execute(): string`
+ *     📌 Retorna la consulta SQL generada en forma de cadena de texto.
+ *
+ * 🛠️ **Ejemplo de uso:**
+ * ```javascript
+ * const usersQuery = new QueryBuilder("users")  // 📌 Especifica la tabla "users"
+ *     .select("id", "name", "email")            // 📌 Selecciona los campos id, name y email
+ *     .where("age > 18")                        // 📌 Agrega condición: edad mayor a 18
+ *     .where("country = 'Cri'")                 // 📌 Agrega otra condición con `AND`
+ *     .orderBy("name", "ASC")                   // 📌 Ordena los resultados por nombre ascendente
+ *     .limit(10)                                // 📌 Limita los resultados a 10 registros
+ *     .execute();                               // 📌 Genera la consulta SQL
+ *
+ * console.log('Consulta:', usersQuery);
+ * // 🔍 Resultado esperado:
+ * // SELECT id, name, email FROM users WHERE age > 18 AND country = 'Cri' ORDER BY name ASC LIMIT 10;
+ * ```
  */
 
 import {COLORS} from "../../helpers";

@@ -1,7 +1,8 @@
-# Builder Pattern (Patrón Builder)
+# Builder Pattern
 
 ## Descripción General
-El Patrón Builder es un patrón de diseño creacional que permite la construcción de objetos complejos paso a paso. Separa la construcción de un objeto complejo de su representación, permitiendo que el mismo proceso de construcción pueda crear diferentes representaciones.
+El Patrón Builder es un patrón de diseño creacional que permite la construcción de objetos complejos paso a paso. 
+Separa la construcción de un objeto complejo de su representación, permitiendo que el mismo proceso de construcción pueda crear diferentes representaciones.
 
 ## Propósito
 Este patrón resuelve el problema del anti-patrón conocido como "constructor telescópico" - cuando necesitas crear un objeto con muchos parámetros opcionales, lo que resulta en numerosas sobrecargas de constructores.
