@@ -29,9 +29,6 @@
  * Reporte de Inventario generado con éxito.
  * ```
  */
-
-
-import {COLORS} from "../../helpers";
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
