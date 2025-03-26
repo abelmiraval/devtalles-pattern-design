@@ -24,12 +24,12 @@ Abstract Factory resuelve el problema de crear conjuntos de objetos dependientes
 
 ## Diferencias con Factory Method
 
-| Abstract Factory | Factory Method |
-|------------------|----------------|
+| Abstract Factory                                                     | Factory Method                                        |
+|----------------------------------------------------------------------|-------------------------------------------------------|
 | Proporciona una interfaz para crear familias de objetos relacionados | Define una interfaz para crear un solo tipo de objeto |
-| Trabaja a través de composición | Trabaja a través de herencia |
-| Crea múltiples tipos de objetos | Crea un tipo de objeto |
-| Enfocado en familias de productos | Enfocado en productos individuales |
+| Trabaja a través de composición                                      | Trabaja a través de herencia                          |
+| Crea múltiples tipos de objetos                                      | Crea un tipo de objeto                                |
+| Enfocado en familias de productos                                    | Enfocado en productos individuales                    |
 
 
 ## Referencias

@@ -22,6 +22,12 @@ El Factory Method resuelve el problema de crear objetos de producto sin especifi
 - 🔧 Cuando necesitas crear diferentes variantes de un producto sin modificar el código cliente.
 - 🌟 Cuando quieres implementar un sistema de plugins o extensiones donde los usuarios pueden agregar nuevas funcionalidades.
 
+## Variaciones del Patrón
+
+1. **Factory Method Parametrizado**: El Factory Method acepta un parámetro que especifica el tipo de objeto a crear.
+2. **Factory Method con Registro**: Utiliza un registro o mapa para mantener las clases de productos disponibles.
+3. **Factory Method Estático**: Implementa el Factory Method como un método estático para simplificar su uso.
+
 ## Referencias
 - [Refactoring Guru: Factory Method](https://refactoring.guru/es/design-patterns/factory-method)
 - [Design Patterns for Humans: Factory Method](https://github.com/kamranahmedse/design-patterns-for-humans#-factory-method)

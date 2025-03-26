@@ -22,6 +22,12 @@ Este patrón resuelve el problema de crear nuevas instancias de objetos complejo
 - 📝 Cuando la creación de un objeto es más costosa que copiarlo (por ejemplo, un objeto que requiere operaciones de base de datos).
 - 🧠 Cuando necesitas instantáneos o estados de un objeto que puedan ser restaurados posteriormente.
 
+## Variaciones del Patrón
+
+1. **Prototype Factory**: Combina el patrón Prototype con Factory para crear nuevos objetos basados en plantillas registradas.
+2. **Prototype Registry**: Mantiene un registro de prototipos disponibles para clonar, como se mostró en el ejemplo.
+3. **Deep vs Shallow Cloning**: Dependiendo de la complejidad, puede necesitarse clonación profunda o superficial.
+4. **Copy Constructor**: Una alternativa al método clone() donde un constructor acepta una instancia del mismo tipo.
 
 ## Referencias
 - [Refactoring Guru: Patrón Prototype](https://refactoring.guru/es/design-patterns/prototype)
