@@ -1,26 +1,24 @@
+//! 📌 Descripción del Desafío: Generación de Reportes con el Patrón Factory
 
 /**
- * 📌 **Descripción del Desafío: Generación de Reportes con el Patrón Factory**
  *
- * 🎯 **Objetivo:** Implementar un sistema de generación de reportes utilizando una interfaz común y el patrón de diseño Factory Method.
+ * 🎯 Objetivo: Implementar un sistema de generación de reportes utilizando una interfaz común y el patrón de diseño Factory Method.
  *
- * 🛠️ **Tareas a realizar:**
+ * 📋 Instrucciones:
  *
- * 1️⃣ **Implementar la interfaz `Report`**
+ * 1️⃣ Implementar la interfaz `Report`
  *    - Debe definir un método `generate()`, que será implementado en las clases de reportes.
  *
- * 2️⃣ **Completar las clases `SalesReport` e `InventoryReport`**
+ * 2️⃣ Completar las clases `SalesReport` e `InventoryReport`
  *    - Ambas clases deben implementar la interfaz `Report`.
  *    - Cada una debe personalizar su método `generate()` para generar el contenido adecuado del reporte.
  *
- * 3️⃣ **Crear las fábricas `SalesReportFactory` e `InventoryReportFactory`**
+ * 3️⃣ Crear las fábricas `SalesReportFactory` e `InventoryReportFactory`
  *    - Estas clases deben encargarse de crear instancias de `SalesReport` e `InventoryReport`, respectivamente.
  *    - Aplicar el patrón **Factory Method** para encapsular la creación de los objetos.
  *
+ * 💡 Salida esperada:
  *
- * 🚀 **Ejemplo de uso esperado:**
- *
- * 🔍 **Resultado esperado (según el tipo de reporte seleccionado):**
  * ```
  * Reporte de Ventas generado con éxito.
  * ```

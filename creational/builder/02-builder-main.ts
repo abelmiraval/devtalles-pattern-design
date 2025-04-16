@@ -1,11 +1,10 @@
-
-//! 🏗️ Desafío: Construcción de un QueryBuilder en JavaScript 🏗️
+//! 📌️ Desafío: Construcción de un QueryBuilder en JavaScript
 
 /**
  * 🎯 Objetivo: Implementar una clase `QueryBuilder` para generar dinámicamente consultas SQL de manera fluida utilizando métodos encadenados.
  *
+ * 📋 Instrucciones:
  *
- * 📝 Requisitos:
  *   ✅ Construcción de consultas SQL con métodos encadenables
  *   ✅ Soporte para selección de campos, condiciones, ordenamiento y límites
  *   ✅ Generación de una consulta SQL válida como cadena de texto
@@ -32,8 +31,8 @@
  * 🔹 `execute(): string`
  *     📌 Retorna la consulta SQL generada en forma de cadena de texto.
  *
- * 🛠️ **Ejemplo de uso:**
- * ```javascript
+ * 💡 Salida esperada:
+ *
  * const usersQuery = new QueryBuilder("users")  // 📌 Especifica la tabla "users"
  *     .select("id", "name", "email")            // 📌 Selecciona los campos id, name y email
  *     .where("age > 18")                        // 📌 Agrega condición: edad mayor a 18
@@ -43,9 +42,9 @@
  *     .execute();                               // 📌 Genera la consulta SQL
  *
  * console.log('Consulta:', usersQuery);
- * // 🔍 Resultado esperado:
- * // SELECT id, name, email FROM users WHERE age > 18 AND country = 'Cri' ORDER BY name ASC LIMIT 10;
- * ```
+ *
+ * SELECT id, name, email FROM users WHERE age > 18 AND country = 'Cri' ORDER BY name ASC LIMIT 10;
+ *
  */
 
 import {COLORS} from "../../helpers";

@@ -1,13 +1,15 @@
+//! 📌️ Desafío: Método de Copia Inmutable para Jugador
 
 /**
- * 🎮 **Desafío: Método de Copia Inmutable para Jugador**
- * 📌 **Descripción del Desafío: Implementación del Patrón Inmutabilidad con copia para Jugadores**
+ * 🎯 Objetivo: Implementación del Patrón Inmutabilidad con copia para Jugadores**
  *
- * 1. Implementar método `copyWith` en la clase Player
- *    • Permitir crear copias con cambios en name, score o level
+ * 📋 **Instrucciones:**
  *
- * 2. Probar el método mediante código cliente
- *    • Realizar cambios en puntaje, nivel y nombre
+ * 1️⃣ Implementar método `copyWith` en la clase Player
+ *    - Permitir crear copias con cambios en name, score o level
+ *
+ * 2️⃣ Probar el método mediante código cliente
+ *    - Realizar cambios en puntaje, nivel y nombre
  */
 
 import {Player} from "./02-inmutable";
